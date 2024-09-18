@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .v{
+            position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    object-fit: cover;
+    width:1280px;
+    height:40%;
+    z-index:-1;
+    padding-bottom: 20px;;
+        }
+        nav{
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-around;
+            gap: 50px;
+        }
+        ul a{
+        text-decoration: none;
+            color:white;
+            font-size: 25px;
+            font-family:"roboto";
+            font-weight: bold;
+        }
+    
+        
+        ul{
+            list-style: none;
+        }
+        .h{
+            display: flex;
+            gap: 20px;
+
+        }
+        input{
+            border-radius: 10px;
+            padding: 0px;
+            height: 35px;
+
+        }
+      .w{
+        
+      }
+   
+      .s{
+        position: relative;
+        margin-top: 20px;
+      }
+      .s::after{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0%;
+        height: 2px;
+        background-color: rgb(170, 16, 52);
+        transition: width 1s ease-in-out;
+
+      }
+      .s:hover::after{
+        width: 100%;
+      }
+      .aside{
+        float: left;
+        height: 300px;
+        width: 300px;
+        background-color: aquamarine;
+        border-radius: 10px;
+        padding:10px;
+      }
+      .aside a{
+        text-decoration: none;
+        font-size: 30px;
+    
+      }
+      .w{
+        display:none;
+        position:absolute;
+        background-color: white;
+        padding:10px;
+        box-shadow:4px 4px 5px gray;
+        z-index: 1;
+      }
+      .a{
+        padding: 15px;
+        border-radius:8px;
+        margin:10px
+      }
+      .a:hover{
+        background-color: blue;
+      }
+      .m:hover .w{
+        display: block;
+
+      }
+      .m{
+        position: relative;
+        display: inline-block;
+
+      }
+      main{
+        display:flex;
+        margin-top: 120px;
+        justify-content: space-around;
+      }
+      [type]{
+        width:200px;
+
+      }
+      [type]:hover{
+        transform: scalex(1.5);
+      }
+      .f{
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        color: aliceblue;
+
+      }
+    
+      
+     
+
+
+    
+      
+      
+    </style>
+</head>
+
+
+<body>
+    <header>
+       <video class="v" autoplay muted loop>
+        <source  src="https://assets.mixkit.co/videos/26108/26108-720.mp4" type="video/mp4">
+       </video>
+       <nav>
+
+      
+       <h1 style="color: white;">
+        MY BRAND
+       </h1>
+
+         <ul class="h">
+     <li class="s"> <a href="#">Home</a> </li>
+    <div class="m"><li class="s "><a  href="#">Services</a></li>
+     <ul class="w">
+        <li class="a">Web Development</li>
+        <li class="a">Design</li>
+        <li class="a">Marketing</li>
+     </ul></div> 
+     <li  class="s"><a  href="#">About</a></li>
+     
+     <li  class="s"><a  href="#">Contact</a></li>
+       </ul>
+   <input type="name" placeholder="Serach.......">
+    </nav>
+    </header>
+
+<main>
+    <div class="aside">
+        <a href="./drive2table.html" target="iframe_a">Tables</a>
+        <hr>
+
+        <a href="./drive2forms.html" target="iframe_a">Forms</a>
+        <hr>
+        <a href="./2d drivelinks.html" target="iframe_a">Lists</a>
+        <hr>
+        <a href="./drive2cards.html" target="iframe_a">Cards</a>
+        <hr>
+
+
+    </div>
+ <div> 
+    <iframe name="iframe_a" height="300px;" width="700px;"> </iframe>
+ </div>
+</main>
+
+<footer class="f">
+    <span>
+        <h1>Help</h1>
+        <p>Custemer</p>
+        <p>Email</p>
+        <p>Contact</p>
+        <p>Support</p>
+    </span>
+    <span>
+        <h1>Social media</h1>
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Whatspp</p>
+        <p>Twitter</p>
+    </span>
+    <span>
+        <h1>Resources</h1>
+        <p>Pricing</p>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Media kit</p>
+    </span>
+    <span>
+        <h1>Company</h1>
+        <p>Contact us</p>
+        <p>Terms/p>
+        <p>Privacy policy</p>
+        <p>Site  map</p>
+    </span>
+
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
